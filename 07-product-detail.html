@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>凡客</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/product.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/product-detail.css"/>
+</head>
+
+<script></script>
+<body>
+<div id="list">
+    <!--<div class="left">-->
+        <!--<span class="z1">您好,欢迎光临凡客诚品！</span>-->
+        <!--<a href="04-regist.html" class="z1">注册</a>-->
+        <!--<span>|</span>-->
+        <!--<a href="05-login.html" class="z1">登录</a>-->
+        <!--<span>|</span>-->
+        <!--<a href="#" class="z1">我的订单</a>-->
+        <!--<a href="#" class="img1"><img src="img/header/2017-09-21_003814.png"></a>-->
+        <!--<a href="#" class="z1">网站公告</a>-->
+        <!--<a href="#" class="img1"><img src="img/header/2017-09-21_003312.png"></a>-->
+    <!--</div>-->
+</div>
+<div class="main">
+    <header id="header">
+        <!--<iframe src="02-header.html"></iframe>-->
+    </header>
+
+    <section id="sec">
+
+        <div id="bread">  <!--//面包屑导航-->
+            <a href="#">首页</a>
+            <span>&gt;</span>
+            <a href="#">女装</a>
+            <span>&gt;</span>
+            <a href="#">大衣</a>
+            <span>&gt;</span>
+        </div>
+        
+        <div id="name">
+            <span class="title">凡客 羊绒大衣 女款</span>
+            <div class="left_nav">
+                <a href="#goumai">购买指南</a><span>|</span><a href="#mote">模特搭配</a><span>|</span><a href="#banxing">版型工艺</a><span>|</span>
+                <a href="#sheji">设计细节</a><span>|</span><a href="#">评论</a><span>|</span><a href="#">提问</a>
+            </div>
+        </div>
+        <hr/>
+        <!--左侧放大镜图片 和 右侧商品信息-->
+        <div id="product-detail">
+            <div id="preview">
+
+                <div id="mediumDiv">
+                   <img id="mImg"/> 
+                    <div id="mask"></div>
+                    <div id="superMask"></div>
+                </div>
+                <div id="largeDiv"></div>
+                <h1>
+                    <a class="backward disabled"></a>
+                    <a class="forward"></a>
+                    <ul id="icon_list">
+                        <img src="img/loading.gif" alt="加载中..." >
+                        <!--<li><img src="img/product/sm/2017-11-11_102743.png" alt=""/></li>-->
+                        <!--<li><img src="img/product/sm/2017-11-11_102758.png" alt=""/></li>-->
+                        <!--<li><img src="img/product/sm/2017-11-11_102806.png" alt=""/></li>-->
+                        <!--<li><img src="img/product/sm/2017-11-11_102818.png" alt=""/></li>-->
+                        <!--<li><img src="img/product/sm/2017-11-11_102827.png" alt=""/></li>-->
+                        <!--<li><img src="img/product/sm/2017-11-11_102827.png" alt=""/></li>-->
+                        <!-- <li class="i1"><img src="${pic.sm}" data-md="${pic.md}" data-lg="${pic.lg}"></li> -->
+                    </ul>
+                </h1>
+            </div>
+            <div id="show-details">
+                <h1></h1>
+                <!--<h3>-->
+                    <!--<a href="#">凡客 羊绒大衣 女款 冬季特惠</a>-->
+                <!--</h3>-->
+                <div class="price">
+                    <div class="stu-price">
+                        <b>售价：</b>
+                        <span>¥2699.00</span>
+                    </div>
+                    <div class="promise">
+                        <b>服务承诺：</b>
+                        *退货补运费 *7天无忧退货 *48小时快速退款
+                    </div>
+                </div>
+                <!-- 客服 -->
+                <p class="parameter">
+                    <b>客服：</b>
+                    <span>联系客服</span>
+                    <img src="img/product_detail/kefuf.gif">
+                </p>
+                <!-- 颜色 -->
+                <div class="spec clear">
+                    <p>颜色：</p>
+                    <div>
+                        <!-- <a href="05-product-details.html?lib=${laptop.lid}" class=${
+                          laptop.lid===details.lid?"active":""
+                        }>{laptop.spec}</a> -->
+                    </div>
+                </div>
+                <!--规格-->
+                <div class="color clear">
+                    <p>尺码：</p>
+                    <div id="clothSize">
+
+                    </div>
+                </div>
+                <!-- 数量 -->
+                <p class="account">
+                    <span>数量：</span>
+                    <button class="number-reduce">-</button>
+                    <input type="text" value="1" id="resultNum">
+                    <button class="number-add">+</button>
+                </p>
+                <!-- 购买部分 -->
+                <div class="shops">
+                    <a href="#" class="buy">立即购买</a>
+                    <a href="#" class="cart">
+                        <img src="img/product_detail/product_detail_img7.png" alt="">
+                        加入购物车
+                    </a>
+                    <a href="#" class="collection">
+                        <img src="img/product_detail/product_detail_img6.png">
+                        <br>
+                        收藏
+                    </a>
+                </div>
+                <div id="youhui">
+                    <img src="img/product_detail/2017-11-12_161906.png" alt=""/>
+                </div>
+            </div>
+            <!--为你推荐-->
+
+        </div>
+        <div id="recommend">
+            <p>
+                为你推荐
+                <span>大家都在看</span>
+            </p>
+            <div id="demo" class="clear" style="width:1200px;overflow:hidden">
+                <div id="indemo" style="float:left;width:200%;">
+                <div id="demo1" style="float:left">
+                    <div class="details_1 lf">
+                        <div class="detail_img1">
+                            <img src="img/product_detail/2017-11-12_152334.png">
+                        </div>
+                        <p>凡客 羊绒大衣 女款 冬季特惠</p>
+                    </div>
+                    <div class="details_1 lf">
+                        <div class="detail_img1">
+                            <img src="img/product_detail/2017-11-12_152414.png">
+                        </div>
+                        <p>凡客 羊绒大衣 女款 冬季特惠</p>
+                    </div>
+                    <div class="details_1 lf">
+                        <div class="detail_img1">
+                            <img src="img/product_detail/2017-11-12_152425.png">
+                        </div>
+                        <p>凡客 羊绒大衣 女款 冬季特惠</p>
+                    </div>
+                    <div class="details_1 lf">
+                        <div class="detail_img1">
+                            <img src="img/product_detail/2017-11-12_152434.png">
+                        </div>
+                        <p>凡客 羊绒大衣 女款 冬季特惠</p>
+                    </div>
+                </div>
+                <div id="demo2" style="float:left"></div>
+                </div>
+                </div>
+        </div>
+                <div id="goumai">
+                    <img src="img/product_detail/1090897_02.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_03.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_04.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_05.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_06.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_07.jpg" alt=""/>
+                </div>
+                <div id="mote">
+                    <img src="img/product_detail/1090897_08.jpg" alt=""/>
+                    <img src="img/product_detail/6375443_01.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_09.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_10.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_13.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_14.jpg" alt=""/>
+                </div>
+                <div id="banxing">
+                    <img src="img/product_detail/1090897_15.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_16.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_17.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_18.jpg" alt=""/>
+                </div>
+                <div id="sheji">
+                    <img src="img/product_detail/1090897_33.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_34.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_35.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_36.jpg" alt=""/>
+                    <img src="img/product_detail/1090897_37.jpg" alt=""/>
+                    <!--<img src="img/product_detail/1090897_38.jpg" alt=""/>-->
+                    <img src="img/product_detail/1090897_04.jpg" alt=""/>
+                </div>
+                <div id="service">
+                    <img src="img/product_detail/2017-12-10_223809.png" alt=""/>
+                </div>
+    </section>
+
+</div>
+<footer id="footer">
+    <!--<iframe src="03-footer.html"></iframe>-->
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/04_product_detail.js"></script>
+<script>
+    var speed = 20;
+    var tab = document.getElementById("demo");
+    var tab1 = document.getElementById("demo1");
+    var tab2 = document.getElementById("demo2");
+    tab2.innerHTML = tab1.innerHTML;
+    function Marquee() {
+        if (tab2.offsetWidth - tab.scrollLeft <= 0)
+            tab.scrollLeft -= tab1.offsetWidth
+        else {
+            tab.scrollLeft++;
+        }
+    }
+    var MyMar = setInterval(Marquee, speed);
+    tab.onmouseover = function () {
+        clearInterval(MyMar)
+    };
+    tab.onmouseout = function () {
+        MyMar = setInterval(Marquee, speed)
+    };
+</script>
+</body>
+</html>

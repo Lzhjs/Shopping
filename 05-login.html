@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>登陆页面</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/footer.css"/>
+ </head>
+ <style> 
+  #logo{
+   width:1200px;
+   margin-top:70px;
+   padding-bottom:20px;
+   border-bottom:1px solid #797E81;
+
+  }
+  #logo .help{
+   display:inline-block;
+   color:black;
+   font-size:14px;
+   float:right;
+   margin-top:30px;
+  }
+  #zhuti{
+   /*border:1px solid black;*/
+   display:flex;
+   justify-content:space-between;
+   margin-top:100px;
+
+  }
+  #pic{
+      margin-top:20px;
+    margin-left:50px;
+  }
+  #login{
+   width:600px;
+   height:400px ;
+   /*border:1px solid black;*/
+      text-align: center;
+  }
+     #login .text{
+         font-size:23px;
+         font-weight:bold;
+         color:#9F808F;
+
+     }
+     #login .text1{
+         margin-left:100px;
+         font-size:15px;
+     }
+     #login2{
+         width:400px;
+         height:300px;
+         border:1px solid #ddd;
+         margin-left:100px;
+     }
+     #login2 .lu{
+         display:inline-block;
+         border:1px solid #ddd;
+         font-size:17px;
+         color:white;
+         line-height:12px;
+         padding:16px 165px;
+        background:linear-gradient(to bottom,#B81B22,#B71C22);
+     }
+     #uname{
+         width: 300px;
+         height: 20px;
+         padding:10px 20px;
+         margin-top:30px;
+     }
+     #upwd{
+         width: 300px;
+         height: 20px;
+         padding:10px 20px;
+         margin-top:10px;
+     }
+     #bt-login{
+         /*display:inline-block;*/
+         width:340px;
+         height: 50px;
+         font-size:17px;
+         color:white;
+         padding:10px 20px;
+         margin-top:20px;
+         background:linear-gradient(to bottom,#B81B22,#B71C22);
+         outline:none;
+     }
+  #vali_info1,#vali_info2{
+      padding-top:5px;
+      padding-right:245px;
+      color:red;
+      position:relative;
+      font-size: 13px;
+      height:13px;
+  }
+  #login2 .mima{
+      position: absolute;
+      font-size:13px;
+      color:red;
+      margin-left:115px;
+  }
+
+     #footer{
+         margin-top:150px;
+     }
+ </style>
+
+ <script>
+ </script>
+ <body>
+	<div class="main">
+     <div id="logo"><a href="index.html"><img src="img/header/logo_new.jpg" alt=""/></a>
+       <a href="#" class="help">帮助</a>
+     </div>
+
+     <div id="zhuti">
+        <div id="pic">
+          <img src="img/login120412_newlogo.jpg" alt=""/>
+        </div>
+        <div id="login">
+          <span class="text">凡客&nbsp;Vancl&nbsp;登陆</span>
+          <span class="text1">没有账户免费<a href="04-regist.html">&nbsp;注册</a></span>
+         <div id="login2">
+             <span class="lu">用户登录</span>
+             <!--<span class="lu">快速登录</span>-->
+             <form id="form-login">
+            <div>
+                <input type="text" placeholder="请输入您的用户名" id="uname" name="uname" autofocus required/>
+                <div id="vali_info1"><!--用户名不能为空--></div>
+            </div>
+            <div>
+                <input type="password" placeholder="请输入您的密码" id="upwd" name="upwd" minlength="6" maxlength="15" required/>
+                <div id="vali_info2"><!--密码不能为空--></div><span class="mima"><a href="#">找回密码</a></span>
+            </div>
+
+            <div><input type="button" value="登 录" id="bt-login"/></div>
+             </form>
+        </div>
+            </div>
+      </div>
+     <footer id="footer">
+      <!--<iframe src="03-footer.html"></iframe>-->
+     </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/01_login.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+
+ </body>
+</html>

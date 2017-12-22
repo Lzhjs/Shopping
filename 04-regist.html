@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>注册页面</title>
+ <link rel="stylesheet" href="css/base.css">
+ <link rel="stylesheet" href="css/footer.css"/>
+</head>
+<style>
+ #logo{
+  width:1200px;
+  margin-top:70px;
+  padding-bottom:20px;
+  border-bottom:1px solid #797E81;
+
+ }
+ #logo .help{
+  display:inline-block;
+  color:black;
+  font-size:14px;
+  float:right;
+  margin-top:30px;
+ }
+ #zhuti{
+  /*border:1px solid black;*/
+  display:flex;
+  justify-content:space-between;
+  margin-top:80px;
+
+ }
+ #pic{
+  margin-top:70px;
+  margin-left:50px;
+ }
+ #login{
+  width:600px;
+  height:500px ;
+  /*border:1px solid black;*/
+  text-align: center;
+ }
+ #login .text{
+  font-size:23px;
+  font-weight:bold;
+  color:#9F808F;
+
+ }
+ #login .text1{
+  margin-left:100px;
+  font-size:15px;
+
+ }
+ #login2{
+  width:400px;
+  height:490px;
+  border:1px solid #ddd;
+  margin-left:100px;
+  margin-top:20px;
+ }
+ #login2 .lu{
+  display:inline-block;
+  border:1px solid #ddd;
+  font-size:17px;
+  color:white;
+  line-height:12px;
+  padding:16px 165px;
+  background:linear-gradient(to bottom,#B81B22,#B71C22);
+ }
+ #uname{
+  width: 300px;
+  height: 20px;
+  padding:10px 20px;
+  margin-top:30px;
+  margin-left:15px;
+ }
+ #upwd{
+  width: 300px;
+  height: 20px;
+  padding:10px 20px;
+  margin-top:3px;
+  margin-left:15px;
+ }
+ #cpwd{
+  width: 300px;
+  height: 20px;
+  padding:10px 20px;
+  margin-top:3px;
+  margin-left:15px;
+ }
+ #email{
+  width: 300px;
+  height: 20px;
+  padding:10px 20px;
+  margin-top:3px;
+  margin-left:15px;
+ }
+ #phone{
+  width: 300px;
+  height: 20px;
+  padding:10px 20px;
+  margin-top:3px;
+  margin-left:15px;
+ }
+ #btn-regist{
+  /*display:inline-block;*/
+  width:340px;
+  height:50px;
+  font-size:17px;
+  color:white;
+  padding:10px 20px;
+  margin-top:15px;
+  background:linear-gradient(to bottom,#B81B22,#B71C22);
+  outline:none;
+ }
+ #login2 .mima{
+  display:inline-block;
+  font-size:13px;
+  color:red;
+  margin-left:160px;
+ }
+ #hr{
+  width:402px;
+  border-bottom:3px solid red;
+  margin-left:100px;
+ }
+ #footer{
+  margin-top:70px;
+ }
+ .vali_info1,.vali_info2,.vali_info3,.vali_info4,.vali_info5{
+  /*display:none;*/
+  height:20px;
+  text-align:left;
+  padding:5px 0 0 25px;
+  color:red;
+  font-size:14px;
+ }
+ #uname-show{
+    width: 25px;
+    height:25px;
+    display:inline-block;
+    background-image:url("");
+    vertical-align: middle;
+   }
+ #upwd-show{
+  width: 25px;
+  height:25px;
+  display:inline-block;
+  background-image:url("");
+  vertical-align: middle;
+ }
+ #cpwd-show{
+  width: 25px;
+  height:25px;
+  display:inline-block;
+  background-image:url("");
+  vertical-align: middle;
+ }
+ #email-show{
+  width: 25px;
+  height:25px;
+  display:inline-block;
+  background-image:url("");
+  vertical-align: middle;
+ }
+ #phone-show{
+  width: 25px;
+  height:25px;
+  display:inline-block;
+  background-image:url("");
+  vertical-align: middle;
+ }
+</style>
+<script></script>
+<body>
+<div class="main">
+ <div id="logo">
+  <a href="index.html"><img src="img/header/logo_new.jpg" alt=""/></a>
+  <a href="" class="help">帮助</a>
+ </div>
+
+ <div id="zhuti">
+  <div id="pic">
+   <img src="img/login120412_newlogo.jpg" alt=""/>
+  </div>
+  <div id="login">
+   <div id="hr">
+     <span class="text">注册新用户</span>
+     <span class="text1">我已经注册，现在就<a href="05-login.html">&nbsp;登录</a></span>
+   </div>
+   <div id="login2">
+    <!--<span class="lu">用户登录</span>-->
+    <!--<span class="lu">快速登录</span>-->
+    <form id="form-regist" method="post">
+    <div>
+       <input type="text" id="uname" name="uname" placeholder="请注册您的用户名" required/>
+       <span id="uname-show"></span>
+     <div class="vali_info1"></div>
+    </div>
+    <div>
+       <input type="password" id="upwd" name="upwd" placeholder="请设置您的密码" required/>
+       <span id="upwd-show"></span>
+       <div class="vali_info2"></div>
+    </div>
+       <div><input type="password" id="cpwd" placeholder="请再次确认您的密码" required/>
+       <span id="cpwd-show"></span>
+       <div class="vali_info3"></div>
+     </div>
+     <div>
+       <input type="email" id="email" name="email" placeholder="请输入邮箱" required/>
+       <span id="email-show"></span>
+       <div class="vali_info4"></div>
+     </div>
+    <div>
+       <input type="tel" id="phone" name="phone" placeholder="请输入手机号" required/>
+       <span id="phone-show"></span>
+       <div class="vali_info5"></div>
+    </div>
+     <p class="mima"><input type="checkbox" class="isCheck"/>请阅读《凡客诚品服务条款》</p>
+    <div>
+      <input type="button" value="注 册" id="btn-regist"/>
+    </div>
+    </form>
+   </div>
+  </div>
+ </div>
+ <footer id="footer">
+  <!--<iframe src="03-footer.html"></iframe>-->
+ </footer>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/02_regist.js"></script>
+</body>
+</html>
